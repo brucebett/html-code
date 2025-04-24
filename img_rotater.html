@@ -20,6 +20,25 @@ body{
     background-image: url(resources/img/bg.jpg);
     background-size: cover;
 }
+.box{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite;
+}
+@keyframes animate {
+0%{
+    transform: perspective(1000px) rotateY(0deg)
+
+}
+100%{
+    transform: perspective(1000px) rotateY(360deg);
+}
+}
+
+
+
 </style>    
 
 </head>
