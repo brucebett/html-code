@@ -10,3 +10,12 @@ body {
     justify-content: center;
     gap: 10px;
 }
+
+.container img{
+    width: 10px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.684);
+    transition: all ease-in-out 0.5s;
+}
