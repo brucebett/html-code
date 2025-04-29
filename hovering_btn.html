@@ -5,9 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hovering btn</title>
 
-<style>
+   <style>
+     body{
+        margin: 0;
+        padding: 0;
+     }
+     .btn{
+        cursor: pointer;
+        position: relative;
+        padding: 10px 20px;
+        background: white;
+        font-size: 30px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        transition: all 1s;
+        &:after,
+        &:before{
+            content: "";
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            border: 0px solid #fff;
+            transition: all 1s;
+        }
+     }
 
-</style>
+   </style>
 
 </head>
 <body>
