@@ -55,6 +55,26 @@
          transform-origin: bottom right;
          animation: animate 6s linear infinite;
     }
+    .box::after{
+         content: __;
+         position: absolute;
+         top: -50%;
+         left: -50%;
+         width: 380px;
+         height: 420px;
+         background: linear-gradient(0deg, transparent, #1fe851, #1fe83a);
+         transform-origin: bottom right;
+         animation: animate 6s linear infinite;
+         animation-delay: -3s;
+    }
+    @keyframes animate {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
 
 
 </style>
